@@ -14,10 +14,10 @@ class JsonParser {
     return HeaderModel.fromJson(json['header']);
   }
 
-  static Future<List<ParameterModel>> getParameters(String path) async {
-    final json = await loadJsonFromAssets(path);
-    return (json['parameters'] as List)
-        .map((p) => ParameterModel.fromJson(p))
-        .toList();
-  }
+  // static Future<List<ParameterModel>> getParameters(String path) async {
+  //   final json = await loadJsonFromAssets(path);
+  //   return (json['parameters'] as List)
+  //       .map((p) => ParameterModel.fromJson(p))
+  //       .toList();
+  // }
 }
