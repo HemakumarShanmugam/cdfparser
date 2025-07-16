@@ -29,16 +29,16 @@ class CodeNumber {
 }
 class HeaderModel {
 
-  final String? AppFamilyName;
+  final String? appFamilyName;
   final String? description;
   final int? swVersion;
   final List<CodeNumber>? codeNumbers;
 
-  HeaderModel({this.AppFamilyName, this.description, this.swVersion, this.codeNumbers});
+  HeaderModel({this.appFamilyName, this.description, this.swVersion, this.codeNumbers});
 
   factory HeaderModel.fromJson(Map<String, dynamic> json) {
     return HeaderModel(
-      AppFamilyName: json['AppFamilyName'],
+      appFamilyName: json['AppFamilyName'],
       description: json['Description'],
       swVersion: json['SWVersion'],
       codeNumbers: (json['CodeNumbers'] as List<dynamic>?)
