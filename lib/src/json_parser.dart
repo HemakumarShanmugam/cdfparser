@@ -11,7 +11,7 @@ class JsonParser {
 
   static Future<HeaderModel> getHeader(String path) async {
     final json = await loadJsonFromAssets(path);
-    return HeaderModel.fromJson(json['header']);
+    return HeaderModel.fromJson(json['Header']);
   }
 
   // static Future<List<ParameterModel>> getParameters(String path) async {
