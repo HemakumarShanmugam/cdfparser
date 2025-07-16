@@ -9,8 +9,8 @@ class JsonParser {
     return jsonDecode(jsonString);
   }
 
-  static Future<HeaderModel> getHeader(String path) async {
-    final json = await loadJsonFromAssets(path);
+  static Future<HeaderModel> getHeader(Map<String, dynamic> json) async {
+   // final json = await loadJsonFromAssets(path);
     return HeaderModel.fromJson(json['Header']);
   }
 
